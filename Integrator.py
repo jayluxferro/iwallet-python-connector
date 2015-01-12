@@ -41,7 +41,7 @@ class Integrator:
 
 
     def processPaymentOrder(self, orderId, subtotal, shippingCost,  taxAmount,  total, comment1,  comment2, orderItems):
-        paymentResult = self.iwl.service.processPaymentOrder(orderId,subtotal,shippingCost,taxAmount,total,comment1,comment2,orderItems)
+        paymentResult = self.iwl.service.ProcessPaymentOrder(orderId,subtotal,shippingCost,taxAmount,total,comment1,comment2,orderItems)
         return paymentResult
 
     def processPaymentJSON(self, orderId,  amount, comment1, comment2,  orderItems) :
@@ -49,7 +49,7 @@ class Integrator:
         return paymentResult
 
     def confirmTransaction(self, payToken,  transactionId):
-        paymentResult = self.iwl.service.confirmTransaction(payToken,transactionId)
+        paymentResult = self.iwl.service.ConfirmTransaction(payToken,transactionId)
         return paymentResult
 
     def generatePaymentCode(self, orderId, subtotal, shippingCost,  taxAmount,  total, comment1,  comment2,  orderItems,payerName,  payerMobile, providerName, providerType):
