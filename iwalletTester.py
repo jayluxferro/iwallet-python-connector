@@ -7,8 +7,8 @@ import webbrowser
 wsdl = "https://i-walletlive.com/paylive/paymentservice.asmx?wsdl"
 
 apiVersion = "1.4"
-merchantEmail = "iwallet@dreamoval.com"
-merchantKey = "bdVI+jtRl80PG4x6NMvYOwfZTZtwfN"
+merchantEmail = "your@merchant.email"
+merchantKey = "yourmerchantkey"
 serviceType = "C2B"
 integrationMode =1
 namespace = "http://www.i-walletlive.com/payLIVE"
