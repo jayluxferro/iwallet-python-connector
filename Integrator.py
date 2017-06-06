@@ -3,12 +3,17 @@ __author__ = 'joseph kodjo-kuma Djomeda'
 
 from suds.client import Client
 from suds.sax.element import Element
+import ssl
 
 class Integrator:
 
 
 
     def __init__(self,nspace, wsdl, api_version, merchant_email, merchant_secret_key, service_type, integration_mode):
+
+        if hasattr(ssl, '_create_unverified_context'):
+    	    ssl._create_default_https_context = ssl._create_unverified_context # to fix ssl certificate error
+
 
         self.iwl = Client(wsdl)
 

@@ -4,15 +4,15 @@ from Integrator import Integrator
 import uuid
 import webbrowser
 
-wsdl = "https://i-walletlive.com/paylive/paymentservice.asmx?wsdl"
+wsdl = "https://app.slydepay.com.gh/webservices/paymentservice.asmx?wsdl"
 
 apiVersion = "1.4"
-merchantEmail = "your@merchant.email"
-merchantKey = "yourmerchantkey"
+merchantEmail = "merchantEmail"
+merchantKey = "merchantKey"
 serviceType = "C2B"
 integrationMode =1
 namespace = "http://www.i-walletlive.com/payLIVE"
-redirectUrl = "https://i-walletlive.com/payLIVE/detailsnew.aspx?pay_token="
+redirectUrl = "https://app.slydepay.com.gh/payLIVE/detailsnew.aspx?pay_token="
 
 
 
